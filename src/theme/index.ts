@@ -12,6 +12,9 @@ export const roboto = Roboto({
 // Create a theme instance.
 export const theme = createTheme({
   palette: {
+    action: {
+      active: colors.blueGrey[600],
+    },
     background: {
       default: colors.common.white,
       paper: colors.common.white,
@@ -20,7 +23,7 @@ export const theme = createTheme({
       main: '#f44336',
     },
     secondary: {
-      main: '#3ea6ff',
+      main: '#3EA6FF',
     },
     text: {
       primary: colors.blueGrey[900],
