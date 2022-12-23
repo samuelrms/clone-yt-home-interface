@@ -1,42 +1,18 @@
+import { AccountCircle } from '@mui/icons-material';
+import { useRouter } from 'next/router';
 import {
   Stack,
-  IconButton,
   Button,
   Hidden,
-  Drawer,
   List,
-  ListItem,
-  ListItemText,
   ListItemIcon,
-  ListSubheader,
-  Avatar,
   Divider,
   Typography,
-  SvgIconTypeMap,
 } from '@mui/material';
-import { AccountCircle } from '@mui/icons-material';
-import { OverridableComponent } from '@mui/types';
-import { useRouter } from 'next/router';
+
 import { primaryMenu, secondaryMenu } from './itemsMenu';
 import { CustomListItem, CustomListItemText, DesktopDrawer } from './styles';
-
-type IsSelected =
-  | {
-      id: number;
-      label: string;
-      path: string;
-      icon: OverridableComponent<SvgIconTypeMap<{}, 'svg'>> & {
-        muiName: string;
-      };
-    }
-  | {
-      id: number;
-      label: string;
-      icon: OverridableComponent<SvgIconTypeMap<{}, 'svg'>> & {
-        muiName: string;
-      };
-      path: string;
-    };
+import { IsSelected } from '../../../../types';
 
 export const NavBar = () => {
   const router = useRouter();

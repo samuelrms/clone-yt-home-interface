@@ -1,12 +1,9 @@
 import { Stack } from '@mui/material';
 import Head from 'next/head';
-import { NavBar, TopBar } from './components';
-import { Container, Content, ContentContainer, Wrapper } from './styles';
 
-interface Props {
-  children: React.ReactNode;
-  title?: string;
-}
+import { Container, Content, ContentContainer, Wrapper } from './styles';
+import { NavBar, TopBar } from './components';
+import { Props } from '../../interface';
 
 export const Layout: React.FC<Props> = ({ children, title }) => {
   return (
