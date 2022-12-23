@@ -27,8 +27,19 @@ export const Img = styled('img')(({ theme }) => ({
   marginLeft: theme.spacing(3),
 }));
 
-export const Form = styled(Paper)(({ theme }) => ({}));
+export const Form = styled(Paper)(({ theme }) => ({
+  border: `1px solid ${theme.palette.divider}`,
+  alignItems: 'center',
+  padding: '2px 4px',
+  display: 'flex',
+  maxWidth: 700,
+  minWidth: 350,
+  width: '100%',
+  height: 35,
+})) as typeof Paper;
 
-export const InputForm = styled(InputBase)(({ theme }) => ({}));
+export const InputForm = styled(InputBase)(({ theme }) => ({
+  flex: 1,
+}));
 
-export const ButtonInputForm = styled(IconButton)(({ theme }) => ({}));
+export const ButtonForIcon = styled(IconButton)(({ theme }) => ({}));
