@@ -1,5 +1,5 @@
 import { CheckCircle } from '@mui/icons-material';
-import { Avatar, Icon, Stack, Tooltip, Typography } from '@mui/material';
+import { Avatar, Stack, Tooltip, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 
