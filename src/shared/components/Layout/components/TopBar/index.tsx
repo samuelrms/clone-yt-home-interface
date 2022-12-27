@@ -6,7 +6,7 @@ import {
   Img,
   InputForm,
 } from './styles';
-import { Stack, IconButton, Button, Hidden } from '@mui/material';
+import { Stack, IconButton, Button, Hidden, Typography } from '@mui/material';
 import {
   Menu,
   Search,
@@ -50,6 +50,7 @@ export const TopBar = () => {
             <MoreVert />
           </ButtonForIcon>
           <Button
+            sx={{ width: 'max-content' }}
             color="secondary"
             component="a"
             startIcon={<AccountCircle />}
