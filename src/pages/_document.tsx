@@ -1,7 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
+import { Body } from '../shared';
 import { theme, roboto } from '../theme';
-import { Body } from './_styles';
+
 export default class MyDocument extends Document {
   render() {
     return (
@@ -35,7 +36,7 @@ export default class MyDocument extends Document {
           />
           <meta name="emotion-insertion-point" content="" />
         </Head>
-        <Body >
+        <Body>
           <Main />
           <NextScript />
         </Body>
