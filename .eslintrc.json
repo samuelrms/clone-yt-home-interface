@@ -8,7 +8,11 @@
     "plugin:react/recommended",
     "standard-with-typescript",
     "prettier",
-    "prettier/react"
+    "prettier/react",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
   ],
   "overrides": [],
   "parserOptions": {
