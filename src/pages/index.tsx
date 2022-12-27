@@ -21,7 +21,7 @@ interface Props {
 const Home: React.FC<Props> = ({ data }) => {
   return (
     <Layout title="YouTube">
-      <Container padding={'16px 16px 16px 0'}>
+      <Container>
         <Grid container spacing={4}>
           {data?.map?.((data) => (
             <Grid key={data.id} item xl={3} lg={3} md={4} sm={6} xs={12}>
