@@ -1,6 +1,5 @@
 import { Grid } from '@mui/material';
-import { Layout, VideoCard } from '../shared';
-import { Container } from './_styles';
+import { Container, Layout, VideoCard } from '../shared';
 
 interface Props {
   data: {
