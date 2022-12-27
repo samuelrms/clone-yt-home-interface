@@ -27,7 +27,6 @@
   "devDependencies": {
     "@mui/types": "^7.2.3",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "eslint": "^8.0.1",
     "eslint-config-next": "13.0.7",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard-with-typescript": "^24.0.0",
