@@ -1,13 +1,18 @@
-import { Stack } from '@mui/material';
 import Head from 'next/head';
 
-import { Container, Content, ContentContainer, Wrapper } from './styles';
+import {
+  Container,
+  ContainerLayout,
+  Content,
+  ContentContainer,
+  Wrapper,
+} from './styles';
 import { NavBar, TopBar } from './components';
 import { Props } from '../../interface';
 
 export const Layout: React.FC<Props> = ({ children, title }) => {
   return (
-    <Stack>
+    <ContainerLayout>
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
@@ -22,6 +27,6 @@ export const Layout: React.FC<Props> = ({ children, title }) => {
           </ContentContainer>
         </Wrapper>
       </Container>
-    </Stack>
+    </ContainerLayout>
   );
 };
